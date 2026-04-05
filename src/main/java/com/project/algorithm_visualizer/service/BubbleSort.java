@@ -1,6 +1,5 @@
 package com.project.algorithm_visualizer.service;
 
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,6 @@ public class BubbleSort implements AlgorithmStrategy{
         List<Integer> numbers = new ArrayList<>(request.getNumbers());
         List<SortSteps> steps = new ArrayList<>();
         int sizeOfNumbers= numbers.size();
-        LocalDateTime now = LocalDateTime.now();
         int comparisions=0;
         int swaps=0;
         steps.add(new SortSteps(new ArrayList<>(numbers), new int[]{}, "START", "Algorithm started: Preparing to sort " + sizeOfNumbers + " elements."));

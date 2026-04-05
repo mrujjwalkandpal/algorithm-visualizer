@@ -7,7 +7,7 @@ import java.util.List;
 public class SortSteps{
     private List<Integer> currentState; // Current State of the Array at that particular Frame
     private int[] activeIndex; // The indices that are going to be swapped or compared
-    private String type; // type of Algo--(enum class) -- SEARCHING, SORTING
+    private String type; // type of Algo-SEARCHING, SORTING
     private String desp; // Description of each frame (Ex: 5 is compared with 4 | or | 9 is swapped with 3 | or | Algorithm Starts, Algorithm Stops.. these type of data)
 
 
