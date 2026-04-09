@@ -35,7 +35,7 @@ public class InsertionSort implements AlgorithmStrategy {
                 if(numbers.get(j) > key){
 
                     String desc = "Comparing " + numbers.get(j) + " and " + key;
-                    steps.add(new SortSteps(new ArrayList<>(numbers), new int[] { j, j + 1 }, "COMPARISON", desc));
+                    steps.add(new SortSteps(new ArrayList<>(numbers), new int[] { j, j + 1 }, "COMPARE", desc));
 
                     numbers.set(j + 1, numbers.get(j));
                     swaps++;
@@ -52,7 +52,7 @@ public class InsertionSort implements AlgorithmStrategy {
             steps.add(new SortSteps(new ArrayList<>(numbers), new int[] { j + 1 }, "INSERT",
                     "Inserted " + key + " at position " + (j + 1)));
         }
-        steps.add(new SortSteps(new ArrayList<>(numbers), new int[]{}, "FINISH", "Success! All elements have been sorted in " + comparisons + " comparisons."));
+        steps.add(new SortSteps(new ArrayList<>(numbers), new int[]{}, "END", "Success! All elements have been sorted in " + comparisons + " comparisons."));
 
         AlgorithmResponse response = new AlgorithmResponse(steps,swaps,"O(n²)",comparisons,sizeOfNumbers*sizeOfNumbers -1);
 

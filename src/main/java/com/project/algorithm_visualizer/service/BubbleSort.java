@@ -42,12 +42,12 @@ public class BubbleSort implements AlgorithmStrategy{
                     steps.add(new SortSteps(new ArrayList<>(numbers),new int[]{j,j+1},"SWAPPED", msg));
                 }
             }
-            if(isSwappingHappens==false){
-                steps.add(new SortSteps(new ArrayList<>(numbers),new int[]{}, "FINISH","Array was Already in a Sorted Order"));
+            if(isSwappingHappens==false && swaps==0){
+                steps.add(new SortSteps(new ArrayList<>(numbers),new int[]{}, "END","Array was Already in a Sorted Order"));
                 break;
             }
         }
-        steps.add(new SortSteps(new ArrayList<>(numbers), new int[]{}, "FINISH", "Success! All elements have been sorted in " + comparisions + " comparisons."));
+        steps.add(new SortSteps(new ArrayList<>(numbers), new int[]{}, "END", "Success! All elements have been sorted in " + comparisions + " comparisons."));
         AlgorithmResponse response = new AlgorithmResponse(steps,swaps,"O(n²)",comparisions,sizeOfNumbers*(sizeOfNumbers-1));
         
 
