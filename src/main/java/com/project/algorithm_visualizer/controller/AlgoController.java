@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "https://dsa-visualizer-red.vercel.app")
 @RestController
 @RequestMapping("/api/visualize")
 public class AlgoController {
