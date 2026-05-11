@@ -1,0 +1,11 @@
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/AlgorithmVisualizerApplication.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/config/CorsConfig.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/controller/AlgoController.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/dto/AlgorithmRequest.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/dto/AlgorithmResponse.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/model/SortSteps.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/service/BinarySearch.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/service/BubbleSort.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/service/InsertionSort.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/service/LinearSearch.java
+/home/ujjwal/Downloads/dsa-visualizer-repo/backend/src/main/java/com/project/algorithm_visualizer/startegy/AlgorithmStrategy.java

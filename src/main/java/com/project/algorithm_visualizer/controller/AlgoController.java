@@ -7,16 +7,11 @@ import com.project.algorithm_visualizer.startegy.AlgorithmStrategy;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@CrossOrigin(origins = {
-    "https://dsa-visualizer-red.vercel.app",
-    "http://localhost:5173"
-})
 @RestController
 @RequestMapping("/api/visualize")
 public class AlgoController {
@@ -30,14 +25,15 @@ public class AlgoController {
     @PostMapping("/{algorithm}")
     public AlgorithmResponse algorithmStart(
             @PathVariable String algorithm,
-            @RequestBody AlgorithmRequest request) {
+            @RequestBody AlgorithmRequest request)
 
-        AlgorithmStrategy req = algoMap.get(algorithm.toLowerCase());
-
-        if (req == null) {
+    {
+        AlgorithmStrategy req= algoMap.get(algorithm.toLowerCase());
+        if(req==null){
             throw new RuntimeException("Algorithm not found");
         }
 
         return req.visualize(request);
     }
+
 }

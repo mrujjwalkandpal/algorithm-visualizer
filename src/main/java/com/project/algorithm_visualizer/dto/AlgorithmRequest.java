@@ -16,14 +16,14 @@ public class AlgorithmRequest {
     public List<Integer> getNumbers() {
         return numbers;
     }
-    public int getTarget() {
+    public Integer getTarget() {
         return target;
     }
 
     public void setNumbers(List<Integer> numbers) {
         this.numbers = numbers;
     }
-    public void setTarget(int target) {
+    public void setTarget(Integer target) {
         this.target = target;
     }
     
